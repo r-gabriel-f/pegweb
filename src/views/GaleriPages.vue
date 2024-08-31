@@ -5,7 +5,9 @@
     >
       <div class="w-full max-w-4xl flex flex-col items-center">
         <div>
-          <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center">Mi Galería</h1>
+          <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center">
+            Mi Galeríaa
+          </h1>
         </div>
         <div class="w-full">
           <Carousel
