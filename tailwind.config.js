@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        fondo: 'url("./src/assets/img/fondo.png")'
+        f: 'url("./src/assets/img/fondo.webp")'
       }
     },
     fontFamily: {

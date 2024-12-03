@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <section id="inicio" class="w-screen h-screen bg-fondo bg-cover bg-center">
+  <section id="inicio" class="w-full h-screen bg-f bg-cover bg-center">
     <div class="card flex flex-col justify-center items-center h-full relative">
       <h1 class="text-4xl md:text-6xl font-title-font absolute z-10 top-40">{{ name }}</h1>
       <img
