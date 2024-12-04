@@ -5,11 +5,19 @@ export default {
     extend: {
       backgroundImage: {
         f: 'url("./src/assets/img/fondo.webp")'
+      },
+      colors: {
+        'primary': '#353535',
+        'secondary': '#C89F94',
+        'tertiary': '#F4E3D7',
+        'quaternary': '#F9F7F4',
+        'complement': '#F9b384',
+        'extra': '#FAD4D8',
       }
     },
     fontFamily: {
       'title-font': ['Nerko One', 'sans-serif']
-    }
+    },
   },
   plugins: []
 }

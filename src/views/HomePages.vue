@@ -1,14 +1,22 @@
 <template>
+   <div
+    id="whatsapp-float"
+    className="fixed bottom-4 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer z-10"
+  >
+    <a
+      :href="whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex flex-col items-center mb-4 lg:mb-0"
+      @click="openWhatsApp"
+    >
+      <i class="pi pi-whatsapp" style="color: green; font-size: 30px"></i>
+    </a>
+  </div>
   <NavBar />
-  <section id="inicio" class="w-full h-screen bg-f bg-cover bg-center">
-    <div class="card flex flex-col justify-center items-center h-full relative">
-      <h1 class="text-4xl md:text-6xl font-title-font absolute z-10 top-40">{{ name }}</h1>
-      <img
-        :src="imgpath"
-        alt="Image"
-        class="w-full max-w-lg md:max-w-xl lg:max-w-2xl mt-16 md:mt-24 lg:mt-32"
-      />
-    </div>
+ 
+  <section id="init">
+    <InitPages />
   </section>
 
   <section id="sobre-mi">
@@ -27,9 +35,15 @@ import NavBar from './NavBar.vue'
 import AboutPages from './AboutPages.vue'
 import ContactPages from './ContactPages.vue'
 import GaleriPages from './GaleriPages.vue'
+import InitPages from './InitPages.vue'
 import { DataDog } from '@/data/datapog'
 import { ref } from 'vue'
 
 const imgpath = ref(DataDog[0].image)
 const name = ref(DataDog[0].name)
+const whatsapp = ref(DataDog[0].whatsapp)
+
+const openWhatsApp = () => {
+  window.open(whatsapp.value, '_blank')
+}
 </script>

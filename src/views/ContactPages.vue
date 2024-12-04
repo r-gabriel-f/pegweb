@@ -25,15 +25,6 @@
           <div
             class="col-span-1 flex flex-col items-center justify-center space-y-4 lg:space-y-0 my-5"
           >
-            <a
-              :href="whtaspp"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex flex-col items-center mb-4 lg:mb-0"
-            >
-              <i class="pi pi-whatsapp" style="color: green; font-size: 80px"></i>
-              <span class="text-green-500 mt-2 text-lg lg:m-5">WhatsApp</span>
-            </a>
             <div class="flex flex-col items-center text-center">
               <img :src="hulla" alt="hulla" class="w-32 lg:w-[200px] mb-3 lg:mb-5" />
               <p class="text-sm lg:text-base">
@@ -52,6 +43,5 @@ import { ref } from 'vue'
 import hulla from '../assets/img/huella.webp'
 import { DataDog } from '@/data/datapog'
 const contacdescription = ref(DataDog[0].contacto)
-const whtaspp = ref(DataDog[0].whatsapp)
 const ubicacion = ref(DataDog[0].ubicacion)
 </script>

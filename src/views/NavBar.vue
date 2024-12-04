@@ -19,7 +19,7 @@ const items = ref([
   {
     label: 'Inicio',
     icon: 'pi pi-home',
-    command: () => scrollToSection('inicio', 0)
+    command: () => scrollToSection('init', 0)
   },
   {
     label: 'Sobre Mi',
