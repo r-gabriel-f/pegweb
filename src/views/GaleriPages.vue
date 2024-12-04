@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="min-h-screen flex items-center justify-center bg-gradient-to-t from-primary via-complement to-primary px-4 md:px-20"
+      class=" flex items-center justify-center bg-gradient-to-t from-primary via-complement to-primary px-4 md:px-20"
     >
       <div class="w-full max-w-4xl flex flex-col items-center">
         <div>

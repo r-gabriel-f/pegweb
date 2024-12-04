@@ -1,14 +1,30 @@
 <template>
-  <section id="inicio" class="w-full h-screen bg-f bg-cover bg-center">
-    <div class="card flex flex-col justify-center items-center h-full relative">
-      <h1 class="text-4xl md:text-6xl font-title-font absolute z-10 top-40">{{ name }}</h1>
-      <img
-        :src="imgpath"
-        alt="Image"
-        class="w-full max-w-lg md:max-w-xl lg:max-w-2xl mt-16 md:mt-24 lg:mt-32"
-      />
-    </div>
-  </section>
+  <div
+    id="inicio"
+    class="w-full min-h-screen bg-gradient-to-t from-primary via-complement to-primary flex items-center justify-center"
+  >
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+  <div class="flex justify-center items-center">
+    <Card 
+      class="w-full h-auto sm:max-w-[20rem] md:max-w-[30rem] lg:max-w-[40rem] xl:max-w-[50rem] 
+             sm:h-[25rem] md:h-[30rem] lg:h-[35rem] xl:h-[40rem] !bg-f !bg-center !bg-cover"
+    >
+      <template #title>{{ name }}</template>
+      <template #content>
+        <img 
+          :src="imgpath" 
+          alt="Image" 
+          class="w-auto mx-auto"
+        />
+      </template>
+    </Card>
+  </div>
+  <div class="flex justify-center items-center">
+    <p>hola</p>
+  </div>
+</div>
+
+  </div>
 </template>
 
 <script setup lang="ts">
