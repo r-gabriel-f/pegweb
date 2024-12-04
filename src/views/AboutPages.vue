@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="min-h-screen flex items-center justify-center bg-gradient-to-r from-black to-gray-700"
+      class="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary via-extra to-primary"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full px-4 md:px-10">
         <div class="flex flex-col items-center justify-center text-center md:text-left">

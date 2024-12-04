@@ -19,5 +19,13 @@ export default {
       'title-font': ['Nerko One', 'sans-serif']
     },
   },
-  plugins: []
+  plugins: [
+    function ({ addUtilities,theme }) {
+      addUtilities({
+        '.text-shadow-quaternary': {
+          'text-shadow': `2px 2px 4px ${theme('colors.secondary')}`, // Usando el color quaternary y un desfase de 2px
+        },
+      });
+    },
+  ]
 }

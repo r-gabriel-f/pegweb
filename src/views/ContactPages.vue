@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full min-h-screen bg-gradient-to-r from-black to-gray-700 text-white p-4">
+  <section class="w-full min-h-screen bg-gradient-to-b from-primary via-extra to-complement text-white p-4">
     <div class="container mx-auto">
       <div class="card m-5">
         <div class="flex flex-col items-center mt-5">
