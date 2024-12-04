@@ -16,14 +16,19 @@ export default {
       }
     },
     fontFamily: {
-      'title-font': ['Nerko One', 'sans-serif']
+      'title-font': ['"Quicksand"', 'sans-serif']
+    },
+    fontWeight: {
+      bold: 700, // Negrita
+      normal: 400, // Peso normal
     },
   },
   plugins: [
     function ({ addUtilities,theme }) {
       addUtilities({
-        '.text-shadow-quaternary': {
-          'text-shadow': `2px 2px 4px ${theme('colors.secondary')}`, // Usando el color quaternary y un desfase de 2px
+        '.text-border-letter': {
+          '-webkit-text-stroke': '1px ' + theme('colors.complement'), // Estilo de borde de las letras
+          'color': theme('colors.primary'), // Relleno de la letra
         },
       });
     },

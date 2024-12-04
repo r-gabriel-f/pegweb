@@ -8,7 +8,7 @@
         <div class="m-3 lg:m-5 text-xl lg:text-3xl text-justify">
           {{ contacdescription }}
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-3 lg:m-5">
+        <div class=" m-3 lg:m-5">
           <div
             class="col-span-1 lg:col-span-2 border-2 rounded-lg border-white p-1 shadow-xl shadow-gray-600"
           >
@@ -21,16 +21,6 @@
               :src="`https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=${ubicacion}+(My%20House)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed`"
               ><a href="https://www.gps.ie/">gps devices</a></iframe
             >
-          </div>
-          <div
-            class="col-span-1 flex flex-col items-center justify-center space-y-4 lg:space-y-0 my-5"
-          >
-            <div class="flex flex-col items-center text-center">
-              <img :src="hulla" alt="hulla" class="w-32 lg:w-[200px] mb-3 lg:mb-5" />
-              <p class="text-sm lg:text-base">
-                Gracias por hacerme llegar a mi casa con mi familia
-              </p>
-            </div>
           </div>
         </div>
       </div>
