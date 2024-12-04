@@ -1,9 +1,9 @@
 <template>
-  <section class="w-full min-h-screen bg-gradient-to-b from-primary via-extra to-complement text-white p-4">
+  <section class="w-full min-h-screen bg-gradient-to-b  from-primary via-complement to-primary  text-white p-4">
     <div class="container mx-auto">
       <div class="card m-5">
         <div class="flex flex-col items-center mt-5">
-          <h1 class="text-4xl lg:text-6xl font-bold font-title-font">Contacto</h1>
+          <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center text-primary text-border-letter">Contacto</h1>
         </div>
         <div class="m-3 lg:m-5 text-xl lg:text-3xl text-justify">
           {{ contacdescription }}
@@ -30,7 +30,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import hulla from '../assets/img/huella.webp'
 import { DataDog } from '@/data/datapog'
 const contacdescription = ref(DataDog[0].contacto)
 const ubicacion = ref(DataDog[0].ubicacion)

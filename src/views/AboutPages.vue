@@ -6,7 +6,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full px-4 md:px-10">
         <div class="flex flex-col items-center justify-center text-center md:text-left">
           <div>
-            <h1 class="text-4xl md:text-6xl m-5 font-title-font ">Sobre Mi</h1>
+            <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center text-primary text-border-letter">
+              Sobre Mi
+            </h1>
           </div>
           <div class="m-5 text-lg md:text-2xl text-justify">
             {{ description }}
@@ -23,6 +25,5 @@
 <script setup lang="ts">
 import { DataDog } from '@/data/datapog'
 import { ref } from 'vue'
-const imgpath = ref(DataDog[0].image)
 const description = ref(DataDog[0].description)
 </script>
