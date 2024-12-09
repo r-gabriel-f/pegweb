@@ -1,46 +1,28 @@
 <template>
   <section>
     <div
-      class=" flex items-center justify-center bg-gradient-to-t from-primary via-complement to-primary px-4 md:px-20"
-    >
+      class="h-screen flex items-center justify-center bg-gradient-to-t from-primary via-complement to-primary px-4 md:px-20">
       <div class="w-full max-w-4xl flex flex-col items-center">
         <div>
-          <h1
-            class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center text-primary text-border-letter"
-          >
+          <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center text-primary text-border-letter">
             Mi Galería
           </h1>
         </div>
         <div class="w-full lg:w-[100rem] px-4">
-          <Carousel
-            :value="images"
-            :numVisible="5"
-            :numScroll="1"
-            :responsiveOptions="responsiveOptions"
-            circular
-            :autoplayInterval="3000"
-          >
+          <Carousel :value="images" :numVisible="5" :numScroll="1" :responsiveOptions="responsiveOptions" circular
+            :autoplayInterval="3000">
             <template #item="slotProps">
               <div class="border border-secondary rounded-2xl m-2 p-2">
                 <div>
                   <div
-                    class="relative mx-auto flex justify-center items-center w-full h-[25rem] aspect-[3/7] sm:h-[20rem] md:h-[22rem] lg:h-[25rem]"
-                  >
-                    <img
-                      :src="slotProps.data.imagen"
-                      :alt="'Imagen' + (slotProps.index + 1)"
-                      class="absolute w-full h-full object-cover rounded-xl"
-                    />
-                    <Tag
-                      :value="slotProps.data.titulo"
-                      severity="secondary"
-                      class="absolute"
-                      style="left: 5px; top: 5px"
-                    />
+                    class="relative mx-auto flex justify-center items-center w-full h-[25rem] aspect-[3/7] sm:h-[20rem] md:h-[22rem] lg:h-[25rem]">
+                    <img :src="slotProps.data.imagen" :alt="'Imagen' + (slotProps.index + 1)"
+                      class="absolute w-full h-full object-cover rounded-xl" />
+                    <Tag :value="slotProps.data.titulo" severity="secondary" class="absolute"
+                      style="left: 5px; top: 5px" />
                     <div
                       class="mb-0 min-h-16 max-w-64 absolute left-[6px] bottom-[6px] font-medium text-primary border-2 rounded-xl border-secondary bg-quaternary bg-opacity-85 flex items-center px-2 text-sm"
-                      severity="contrast"
-                    >
+                      severity="contrast">
                       {{ slotProps.data.descripcion }}
                     </div>
                   </div>

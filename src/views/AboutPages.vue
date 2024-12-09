@@ -1,9 +1,8 @@
 <template>
   <section>
     <div
-      class="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary via-complement to-primary"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full px-4 md:px-10">
+      class=" h-auto sm:h-screen flex items-center justify-center bg-gradient-to-b from-primary via-complement to-primary">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full px-4 md:px-10 my-16">
         <div class="flex flex-col items-center justify-center text-center md:text-left">
           <div>
             <h1 class="text-4xl md:text-6xl font-bold m-5 font-title-font text-center text-primary text-border-letter">
