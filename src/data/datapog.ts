@@ -23,116 +23,138 @@ import p20 from '../assets/img/p20.jpg'
 export const DataDog = [
   {
     name: 'Milaneza',
+    image: imgprincipal,
+    breed: 'Cocker Spaniel',
+    age: '1 año',
+    sex: 'Hembra',
+    birthDate: '15/06/2023',
+    characteristics: 'Pelaje tricolor, manchas en las patas',
+    health: {
+      status: 'Saludable',
+      vaccinations: 'Al día',
+      lastVetVisit: '15/12/2023'
+    },
+    environment: {
+      type: 'Casa',
+      setting: 'Urbano',
+      hasYard: true,
+      otherPets: true
+    },
+    owner: {
+      fullName: 'Robert Gabriel Flores',
+      primaryPhone: '+123 456 789',
+      alternatePhone: '+987 654 321',
+      address: 'Calle Siempre Viva 123, Ciudad',
+      email: 'robert@example.com'
+    },
     description:
       '¡Hola! Soy Milaneza, aunque mi nombre formal es Misandei. Soy un perrito de raza Cocker de 6 meses, lleno de energía y curiosidad. Mi personalidad juguetona y afectuosa hace que siempre esté listo para una nueva aventura. Me encanta explorar mi entorno, jugar con mis juguetes y recibir mimos de mi familia. Soy inteligente y, aunque todavía soy joven, ya estoy aprendiendo algunos trucos y habilidades. Disfruto siendo el centro de atención y mi alegría es contagiosa. Siempre estoy dispuesto a hacerte sonreír con mis travesuras y mi lealtad incondicional.',
 
-    image: imgprincipal,
     whatsapp: 'https://wa.link/semulw',
     ubicacion: '-18.422922, -66.590278',
     contacto:
       'Si estás leyendo esto, es porque me he perdido. Si me encontraste, por favor llévame de vuelta a mi casa. Si no puedes, llama a mi familia dejo mi hubicación como el numero telefonico de whatsapp de mi familia no dudes en llamar o mandar un mensaje siempre estan conectados. ¡Agradezco mucho tu ayuda para regresar con mi familia!',
-      galeri: [
-        {
-          imagen: p1,
-          titulo: 'Jugando con mi juguete favorito',
-          descripcion: 'Hoy jugué con mi juguete favorito 🧸, ¡fue muy divertido! 🎉'
-        },
-        {
-          imagen: p2,
-          titulo: 'Explorando el jardín',
-          descripcion: 'El sol estaba cálido ☀️ y salí a explorar el jardín 🌳.'
-        },
-        {
-          imagen: p3,
-          titulo: 'Día lleno de abrazos',
-          descripcion: 'Recibí muchos abrazos 🤗 y me sentí muy amado ❤️.'
-        },
-        {
-          imagen: p4,
-          titulo: 'Un nuevo amigo',
-          descripcion: 'Conocí a un nuevo amigo 🐕‍🦺 en el parque 🛝.'
-        },
-        {
-          imagen: p5,
-          titulo: 'Mi nuevo truco',
-          descripcion: 'Aprendí un truco nuevo 🎩, ¡mi familia está muy orgullosa! 🥰'
-        },
-        {
-          imagen: p6,
-          titulo: 'Persiguiendo aves',
-          descripcion: 'Hoy vi un ave 🐦 y la perseguí, pero era muy rápida! 🏃‍♂️💨'
-        },
-        {
-          imagen: p7,
-          titulo: 'Mi comida favorita',
-          descripcion: 'Me dieron mi comida favorita 🥩, ¡fue un gran día! 😋'
-        },
-        {
-          imagen: p8,
-          titulo: 'Siesta perfecta',
-          descripcion: 'Disfruté de una siesta larga bajo el árbol 🌳💤.'
-        },
-        {
-          imagen: p9,
-          titulo: 'Travesuras',
-          descripcion: 'Hice una pequeña travesura 😜, pero nadie se enojó 😇.'
-        },
-        {
-          imagen: p10,
-          titulo: 'Rincón misterioso',
-          descripcion: 'Descubrí un rincón nuevo de la casa 🏡 para explorar 🔍.'
-        },
-        {
-          imagen: p11,
-          titulo: 'Baño refrescante',
-          descripcion: 'Me bañaron 🛁 y ahora mi pelaje está brillante ✨.'
-        },
-        {
-          imagen: p12,
-          titulo: 'Fuerza y felicidad',
-          descripcion: 'Corrí mucho en el parque 🏃‍♂️🌳, ¡me siento fuerte 💪 y feliz! 😊'
-        },
-        {
-          imagen: p13,
-          titulo: 'Lluvia tranquila',
-          descripcion: 'Hoy me quedé viendo la lluvia 🌧️ desde la ventana 🪟.'
-        },
-        {
-          imagen: p14,
-          titulo: 'Rey del parque',
-          descripcion: 'Tuve un sueño divertido 🛌 en el que era el rey del parque 👑.'
-        },
-        {
-          imagen: p15,
-          titulo: 'Momento especial',
-          descripcion: 'Compartí un momento especial 💖 con mi familia 👨‍👩‍👦.'
-        },
-        {
-          imagen: p16,
-          titulo: 'Alerta máxima',
-          descripcion: 'Escuché un sonido extraño 👂 y estuve alerta todo el día 🚨.'
-        },
-        {
-          imagen: p17,
-          titulo: 'Tímido pero querido',
-          descripcion: 'Hoy me sentí un poco tímido 😳, pero recibí mucho cariño 🥰.'
-        },
-        {
-          imagen: p18,
-          titulo: 'Un nuevo juguete',
-          descripcion: '¡Descubrí un nuevo juguete 🎾 y me encantó! 😍'
-        },
-        {
-          imagen: p19,
-          titulo: 'Día de descanso',
-          descripcion: 'Pasé el día descansando 🛌 después de tanta actividad 💤.'
-        },
-        {
-          imagen: p20,
-          titulo: 'Felicidad pura',
-          descripcion: 'Hoy simplemente disfruté de ser el perro más feliz 🐶💖.'
-        }
-      ]
-      
+    galeri: [
+      {
+        imagen: p1,
+        titulo: 'Jugando con mi juguete favorito',
+        descripcion: 'Hoy jugué con mi juguete favorito 🧸, ¡fue muy divertido! 🎉'
+      },
+      {
+        imagen: p2,
+        titulo: 'Explorando el jardín',
+        descripcion: 'El sol estaba cálido ☀️ y salí a explorar el jardín 🌳.'
+      },
+      {
+        imagen: p3,
+        titulo: 'Día lleno de abrazos',
+        descripcion: 'Recibí muchos abrazos 🤗 y me sentí muy amado ❤️.'
+      },
+      {
+        imagen: p4,
+        titulo: 'Un nuevo amigo',
+        descripcion: 'Conocí a un nuevo amigo 🐕‍🦺 en el parque 🛝.'
+      },
+      {
+        imagen: p5,
+        titulo: 'Mi nuevo truco',
+        descripcion: 'Aprendí un truco nuevo 🎩, ¡mi familia está muy orgullosa! 🥰'
+      },
+      {
+        imagen: p6,
+        titulo: 'Persiguiendo aves',
+        descripcion: 'Hoy vi un ave 🐦 y la perseguí, pero era muy rápida! 🏃‍♂️💨'
+      },
+      {
+        imagen: p7,
+        titulo: 'Mi comida favorita',
+        descripcion: 'Me dieron mi comida favorita 🥩, ¡fue un gran día! 😋'
+      },
+      {
+        imagen: p8,
+        titulo: 'Siesta perfecta',
+        descripcion: 'Disfruté de una siesta larga bajo el árbol 🌳💤.'
+      },
+      {
+        imagen: p9,
+        titulo: 'Travesuras',
+        descripcion: 'Hice una pequeña travesura 😜, pero nadie se enojó 😇.'
+      },
+      {
+        imagen: p10,
+        titulo: 'Rincón misterioso',
+        descripcion: 'Descubrí un rincón nuevo de la casa 🏡 para explorar 🔍.'
+      },
+      {
+        imagen: p11,
+        titulo: 'Baño refrescante',
+        descripcion: 'Me bañaron 🛁 y ahora mi pelaje está brillante ✨.'
+      },
+      {
+        imagen: p12,
+        titulo: 'Fuerza y felicidad',
+        descripcion: 'Corrí mucho en el parque 🏃‍♂️🌳, ¡me siento fuerte 💪 y feliz! 😊'
+      },
+      {
+        imagen: p13,
+        titulo: 'Lluvia tranquila',
+        descripcion: 'Hoy me quedé viendo la lluvia 🌧️ desde la ventana 🪟.'
+      },
+      {
+        imagen: p14,
+        titulo: 'Rey del parque',
+        descripcion: 'Tuve un sueño divertido 🛌 en el que era el rey del parque 👑.'
+      },
+      {
+        imagen: p15,
+        titulo: 'Momento especial',
+        descripcion: 'Compartí un momento especial 💖 con mi familia 👨‍👩‍👦.'
+      },
+      {
+        imagen: p16,
+        titulo: 'Alerta máxima',
+        descripcion: 'Escuché un sonido extraño 👂 y estuve alerta todo el día 🚨.'
+      },
+      {
+        imagen: p17,
+        titulo: 'Tímido pero querido',
+        descripcion: 'Hoy me sentí un poco tímido 😳, pero recibí mucho cariño 🥰.'
+      },
+      {
+        imagen: p18,
+        titulo: 'Un nuevo juguete',
+        descripcion: '¡Descubrí un nuevo juguete 🎾 y me encantó! 😍'
+      },
+      {
+        imagen: p19,
+        titulo: 'Día de descanso',
+        descripcion: 'Pasé el día descansando 🛌 después de tanta actividad 💤.'
+      },
+      {
+        imagen: p20,
+        titulo: 'Felicidad pura',
+        descripcion: 'Hoy simplemente disfruté de ser el perro más feliz 🐶💖.'
+      }
+    ]
   }
 ]
